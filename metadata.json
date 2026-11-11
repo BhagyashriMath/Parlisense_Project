@@ -1,0 +1,11 @@
+{
+  "name": "AI-Based System for Smooth Functioning of Parliament Sessions",
+  "description": "An automated AI-operated parliamentary session monitoring, computer vision seat tracking, acoustic analysis, speech transcription, emotion detection, rule engine, and decision-support dashboard system.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,6 @@
+path: .
+train: ml/data/vision/images/train
+val: ml/data/vision/images/val
+
+names:
+  0: person

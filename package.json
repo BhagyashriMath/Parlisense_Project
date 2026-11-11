@@ -1,0 +1,11 @@
+{
+  "name": "parlisense",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "ParliSense Monorepo - Frontend and Backend are hosted and run independently.",
+  "scripts": {
+    "dev": "echo \"[NOTICE] Do not trigger servers from the root folder. Run 'cd frontend && npm run dev' for the frontend server, or 'cd backend && npm run dev' for the backend server.\"",
+    "build": "echo \"[NOTICE] Run 'cd frontend && npm run build' or 'cd backend && npm run build' in their respective directories.\""
+  }
+}

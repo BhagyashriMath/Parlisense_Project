@@ -1,0 +1,90 @@
+{
+  "system_version": "2.4.0",
+  "rule_weights": {
+    "participation": 0.20,
+    "agenda_relevance": 0.25,
+    "speaking_discipline": 0.20,
+    "seat_compliance": 0.15,
+    "decorum_discipline": 0.20
+  },
+  "thresholds": {
+    "speaking_time_warning_ratio": 0.85,
+    "speaking_time_max_default_seconds": 300,
+    "noise_normal_db": 60,
+    "noise_moderate_db": 75,
+    "noise_high_db": 82,
+    "agenda_similarity_min": 0.45,
+    "agenda_similarity_critical_offtopic": 0.25,
+    "emotion_heated_confidence_threshold": 0.70,
+    "offensive_confidence_threshold": 0.60,
+    "multiple_speakers_overlap_ms": 500,
+    "unauthorized_movement_distance_pixels": 45,
+    "unauthorized_movement_grace_period_sec": 8
+  },
+  "rules": [
+    {
+      "id": "RULE_1_SPEAKING_TIME",
+      "name": "Speaking Time Exceeded",
+      "description": "Member has exceeded the allocated time limit for the current debate turn.",
+      "severity": "LOW",
+      "penalty_points": 5,
+      "enabled": true
+    },
+    {
+      "id": "RULE_2_HIGH_NOISE",
+      "name": "High Noise Level in Chamber",
+      "description": "Acoustic decibel levels exceeded the safe threshold for orderly debate.",
+      "severity": "HIGH",
+      "penalty_points": 10,
+      "enabled": true
+    },
+    {
+      "id": "RULE_3_OFF_TOPIC",
+      "name": "Off-Topic Discussion",
+      "description": "Speech contents deviated significantly from the active parliamentary agenda bill.",
+      "severity": "MEDIUM",
+      "penalty_points": 8,
+      "enabled": true
+    },
+    {
+      "id": "RULE_4_HEATED_DEBATE",
+      "name": "Heated Debate / High Emotional Agitation",
+      "description": "Acoustic and NLP sentiment indicates aggressive agitation or unparliamentary tone.",
+      "severity": "MEDIUM",
+      "penalty_points": 6,
+      "enabled": true
+    },
+    {
+      "id": "RULE_5_OFFENSIVE_LANGUAGE",
+      "name": "Unparliamentary / Offensive Language",
+      "description": "Expungable, offensive, or derogatory language detected in the live transcript.",
+      "severity": "CRITICAL",
+      "penalty_points": 25,
+      "enabled": true
+    },
+    {
+      "id": "RULE_6_MULTIPLE_SPEAKERS",
+      "name": "Simultaneous Speakers / Interruption",
+      "description": "Multiple microphones/speakers detected concurrently interrupting the active floor.",
+      "severity": "HIGH",
+      "penalty_points": 12,
+      "enabled": true
+    },
+    {
+      "id": "RULE_7_UNAUTHORIZED_MOVEMENT",
+      "name": "Unauthorized Seat Displacement / Well Rush",
+      "description": "Computer vision tracking identified member departing allocated seat towards the well.",
+      "severity": "MEDIUM",
+      "penalty_points": 10,
+      "enabled": true
+    },
+    {
+      "id": "RULE_8_EMERGENCY_BUTTON",
+      "name": "Emergency Button Activation",
+      "description": "Emergency hardware/software trigger pressed in chamber or console.",
+      "severity": "CRITICAL",
+      "penalty_points": 0,
+      "enabled": true
+    }
+  ]
+}

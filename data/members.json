@@ -1,0 +1,134 @@
+[
+  {
+    "member_id": "M001",
+    "name": "Dr. Rajeshwar Sharma",
+    "seat_id": "S01",
+    "constituency": "Varanasi North",
+    "party": "National Democratic Front",
+    "role": "Minister of Education",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+    "allocated_time_seconds": 600,
+    "historical_score": 92
+  },
+  {
+    "member_id": "M002",
+    "name": "Smt. Priya Sundaram",
+    "seat_id": "S02",
+    "constituency": "Chennai Central",
+    "party": "Progressive Alliance",
+    "role": "Leader of the Opposition",
+    "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80",
+    "allocated_time_seconds": 480,
+    "historical_score": 88
+  },
+  {
+    "member_id": "M003",
+    "name": "Vikramaditya Rao",
+    "seat_id": "S03",
+    "constituency": "Hyderabad East",
+    "party": "Federal People's Party",
+    "role": "Standing Committee Chair (Tech)",
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
+    "allocated_time_seconds": 360,
+    "historical_score": 94
+  },
+  {
+    "member_id": "M004",
+    "name": "Prof. Ananya Banerjee",
+    "seat_id": "S04",
+    "constituency": "Kolkata South",
+    "party": "Democratic Front",
+    "role": "Member of Parliament",
+    "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&auto=format&fit=crop&q=80",
+    "allocated_time_seconds": 300,
+    "historical_score": 85
+  },
+  {
+    "member_id": "M005",
+    "name": "Capt. Harpreet Singh",
+    "seat_id": "S05",
+    "constituency": "Amritsar Rural",
+    "party": "National Democratic Front",
+    "role": "Member of Parliament",
+    "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
+    "allocated_time_seconds": 300,
+    "historical_score": 90
+  },
+  {
+    "member_id": "M006",
+    "name": "Meenakshi Joshi",
+    "seat_id": "S06",
+    "constituency": "Jaipur West",
+    "party": "Progressive Alliance",
+    "role": "Member of Parliament",
+    "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&auto=format&fit=crop&q=80",
+    "allocated_time_seconds": 300,
+    "historical_score": 79
+  },
+  {
+    "member_id": "M007",
+    "name": "Arun K. Pillai",
+    "seat_id": "S07",
+    "constituency": "Thiruvananthapuram",
+    "party": "United Socialist Party",
+    "role": "Member of Parliament",
+    "avatar": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=150&auto=format&fit=crop&q=80",
+    "allocated_time_seconds": 300,
+    "historical_score": 86
+  },
+  {
+    "member_id": "M008",
+    "name": "Dr. Farooq Abdullah Qureshi",
+    "seat_id": "S08",
+    "constituency": "Srinagar Central",
+    "party": "Federal People's Party",
+    "role": "Member of Parliament",
+    "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&auto=format&fit=crop&q=80",
+    "allocated_time_seconds": 300,
+    "historical_score": 83
+  },
+  {
+    "member_id": "M009",
+    "name": "Sunita Deshmukh",
+    "seat_id": "S09",
+    "constituency": "Pune North",
+    "party": "National Democratic Front",
+    "role": "Minister of State for Finance",
+    "avatar": "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?w=150&auto=format&fit=crop&q=80",
+    "allocated_time_seconds": 420,
+    "historical_score": 91
+  },
+  {
+    "member_id": "M010",
+    "name": "Tsering Namgyal",
+    "seat_id": "S10",
+    "constituency": "Ladakh Outer",
+    "party": "Independent",
+    "role": "Member of Parliament",
+    "avatar": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=150&auto=format&fit=crop&q=80",
+    "allocated_time_seconds": 300,
+    "historical_score": 95
+  },
+  {
+    "member_id": "M011",
+    "name": "Kavitha Reddy",
+    "seat_id": "S11",
+    "constituency": "Bengaluru Rural",
+    "party": "Progressive Alliance",
+    "role": "Member of Parliament",
+    "avatar": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=150&auto=format&fit=crop&q=80",
+    "allocated_time_seconds": 300,
+    "historical_score": 82
+  },
+  {
+    "member_id": "M012",
+    "name": "Rameshwar Patel",
+    "seat_id": "S12",
+    "constituency": "Ahmedabad East",
+    "party": "National Democratic Front",
+    "role": "Member of Parliament",
+    "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=80",
+    "allocated_time_seconds": 300,
+    "historical_score": 89
+  }
+]
