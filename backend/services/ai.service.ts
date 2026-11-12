@@ -2,8 +2,8 @@ import { rulesConfig } from "../config";
 import fs from "fs";
 import path from "path";
 
-// Python ML service for SBERT agenda relevance
-const ML_BASE = process.env.ML_SERVICE_URL || "http://localhost:8000";
+// Python ML service for SBERT agenda relevance (configured via ML_SERVICE_URL, defaults to http://localhost:8000)
+const ML_BASE = (process.env.ML_SERVICE_URL || "http://localhost:8000").replace(/\/+$/, "");
 
 // Per-process cache: agenda text → result  (invalidated when agenda changes)
 let _lastAgendaText = "";

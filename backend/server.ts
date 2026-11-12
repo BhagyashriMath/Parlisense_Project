@@ -4,7 +4,7 @@ import path from "path";
 import fs from "fs";
 import os from "os";
 
-import { PORT, ROOT_DIR } from "./config";
+import { PORT, ROOT_DIR, ML_SERVICE_URL } from "./config";
 import { runMigrations } from "./database/migrator";
 import { memberRepository } from "./repositories/member.repository";
 import { alertRepository } from "./repositories/alert.repository";
@@ -233,6 +233,7 @@ async function startServer() {
     console.log(`  \x1b[32m➜\x1b[0m  \x1b[1mAPI URL:\x1b[0m     \x1b[36mhttp://localhost:${PORT}/api\x1b[0m`);
     console.log(`  \x1b[32m➜\x1b[0m  \x1b[1mHealth:\x1b[0m      \x1b[36mhttp://localhost:${PORT}/health\x1b[0m`);
     console.log(`  \x1b[32m➜\x1b[0m  \x1b[1mWebSocket:\x1b[0m   \x1b[36mws://localhost:${PORT}/ws/session\x1b[0m`);
+    console.log(`  \x1b[32m➜\x1b[0m  \x1b[1mML Service:\x1b[0m  \x1b[36m${ML_SERVICE_URL}\x1b[0m`);
     console.log(`  \x1b[32m➜\x1b[0m  \x1b[1mDatabase:\x1b[0m    \x1b[33m${db.isPostgres ? "PostgreSQL / Neon" : "SQLite fallback"}\x1b[0m`);
     console.log(`  \x1b[32m➜\x1b[0m  \x1b[1mNetwork:\x1b[0m     \x1b[36mhttp://${localIP}:${PORT}/\x1b[0m\n`);
   });
