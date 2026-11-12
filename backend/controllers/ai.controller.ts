@@ -5,9 +5,10 @@ import { alertRepository } from "../repositories/alert.repository";
 import { auditRepository } from "../repositories/audit.repository";
 import { transcriptRepository } from "../repositories/transcript.repository";
 import { aiService } from "../services/ai.service";
+import { ML_SERVICE_URL } from "../config";
 
-// Python ML service base URL (FastAPI on port 8000 by default)
-const ML_BASE = process.env.ML_SERVICE_URL || "http://localhost:8000";
+// Python ML service base URL (configured via ML_SERVICE_URL, defaults to http://localhost:8000)
+const ML_BASE = ML_SERVICE_URL;
 
 export class AiController {
   getStatus(req: Request, res: Response): void {
@@ -233,10 +234,15 @@ export class AiController {
           boundary_x2,
           boundary_y2,
         }),
-        signal: AbortSignal.timeout(4000),
+        signal: AbortSignal.timeout(8000),
       });
-      if (mlRes.ok) mlResult = await mlRes.json();
+      if (mlRes.ok) {
+        mlResult = await mlRes.json();
+      } else {
+        console.warn(`[AI] Python ML service responded with HTTP error ${mlRes.status}: ${mlRes.statusText}`);
+      }
     } catch (err: any) {
+      console.warn(`[AI] Could not connect to Python ML service at ${ML_BASE}:`, err?.message || err);
       // ML service unreachable — assume person IS present so the UI never
       // falsely shows "NOT SEATED" just because Python isn't running.
       mlResult = {

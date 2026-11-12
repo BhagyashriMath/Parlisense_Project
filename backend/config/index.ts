@@ -38,6 +38,7 @@ export const JWT_SECRET = process.env.JWT_SECRET || "sansad-parlisense-auth-secr
 export const GEMINI_API_KEY = process.env.GEMINI_API_KEY || "";
 export const DATABASE_URL = process.env.DATABASE_URL || "";
 export const FRONTEND_URL = process.env.FRONTEND_URL || "";
+export const ML_SERVICE_URL = (process.env.ML_SERVICE_URL || "http://localhost:8000").replace(/\/+$/, "");
 
 
 export function loadJSON<T>(filePath: string, fallback: T): T {
